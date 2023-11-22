@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="description" content="Benvenuti nel mio portfolio!">
+        <meta name="keywords" content="SaccoVinc, Sacco, Vincenzo, Coding, HTML, CSS, JavaScript">
+        <meta name="author" content="Vincenzo Sacco">
+        <meta name="viewport" content="width=delvice-width, initial-scale=1">
+
+        <title>SaccoVinc</title>
+        <link rel="icon" href="./Immagini/Loghino.png">
+        <!--Css personalizzato-->
+        <link rel="stylesheet" type="text/css" href="Stile.css">
+    
+        <!--Css per le icone (BoxIcons)-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+        <!--Css per i font (GoogleFonts)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body>
+        <!--Intestazione-->
+        <header>
+            <a href="#home"><img src="Immagini/TopLogo.png" class="logo"></a>
+            <ul class="navlist" id="navlist">
+                <li><a href="#home" class ="navlink">Home</a></li>
+                <li><a href="#services" class="navlink">Servizi</a></li>
+                <li><a href="#career" class="navlink">Carriera</a></li>
+                <li><a href="#contact" class="navlink">Contatti</a></li>
+                <i class='bx bx-x' onclick="closeMenu()"></i>
+            </ul> 
+            <img src="./Immagini/Icone/flag_English.png" class="flag" id="flag" onclick="changeFlag()">
+            <i class='bx bx-menu'  onclick="openMenu()"></i>
+            
+        </header>
+
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home-text">
+                <div class="slide">
+                    <span class="one" id="Hi">Ciao, </span>
+                    <span class="two" id="Iam">Sono</span>
+                </div>
+                <h1>Vincenzo Sacco,</h1>
+                
+                <p id="desc">un ragazzo che ama la programmazione e il foto/video editing, 
+                    pronto ad offrire le sue conoscenze e abilità!</p>
+                
+                <h3 id="Ican">Posso <span class="typing"></span></h3>
+            
+                <div class="button">
+                    <a href="#contact" class="btn" id="reachOut">Ti interessa? Conosciamoci!</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Services-->
+        <section class="services" id="services">
+            <div class="main-text">
+                <h2 id="servTitle">I <span>servizi</span> che offro</h2>
+                <p id="servSubTitle">Cosa posso fare <span>per te?</span></p>
+            </div>
+
+            <div class="services-content">
+                <div class="box">
+                    <div class="s-icons">
+                        <i class="bx bx-mobile-alt"></i>
+                    </div>
+                    <h3 id="servTitle2">Sviluppo App</h3>
+                    <p id="servDesc1">Da videogiochi a servizi posso realizzare qualsiasi app 
+                        <br>per le tue necessità!</p>
+                    <a id="servButton" href="ExtraLink/CodingIt.html" class="showMore">Dimmi di più!</a>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <i class='bx bx-photo-album'></i>
+                    </div>
+                    <h3 id="servTitle3">Photo/Video editing</h3>
+                    <p id="servDesc2">Dalla color correction agli effetti speciali, 
+                        posso dare alle tue foto <br>
+                        il tocco speciale che meritano!</p>
+                    <a id="servButton"href="ExtraLink/PhotoIt.html" class="showMore">Dimmi di più!</a>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <i class='bx bx-code-alt' ></i>
+                    </div>
+                    <h3 id="servTitle4">Sviluppo Web</h3>
+                    <p id="servDesc3">Se cerchi un sito responsivo 
+                        e moderno sei nel posto <br>giusto!<br>
+                    </p>
+                    <a href="ExtraLink/WebDevIt.html" class="showMore">Dimmi di più!</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Career and studies-->
+        <section class="career" id="career">
+            <div class="main-text">
+                <h2 id="careerTitle"><span>Carriera</span> e <span>Studi</span></h2>
+                <p id="careerSubTitle">Il mio <span>percorso</span> di crescita</p>
+            </div>
+
+            <img id="timeline" src="Immagini/TimelineIT.png">
+
+        </section>
+
+        <!--Contact Me-->
+        <section class="contact" id="contact">
+
+            <div class="contact-content">
+                <div class="main-text">
+                    <h2 id="reachTitle"><span>Contattami</span> ora</h2>
+                    <p id="reachSubTitle">Non essere timido! <span>Realizza</span> il progetto dei tuoi sogni!</p>
+                    
+                </div>
+
+                <div class="socialQuote">
+                    <p id="writeMe">Scrivimi un E-Mail a:</p>    
+                    <a href="mailto:saccovincenzoberardino@gmail.com"> saccovincenzoberardino@gmail.com</a>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.facebook.com/SaccoVinc" target="_blank">
+                        <div class="s-icons">
+                            <i class='bx bxl-facebook' ></i>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/saccovinc/" target="_blank">
+                        <div class="s-icons">
+                            <i class='bx bxl-instagram' ></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="Script/MainScript.js"></script>
+        <script src="Script/Resizing.js"></script>
+    </body>
+
+</html>
